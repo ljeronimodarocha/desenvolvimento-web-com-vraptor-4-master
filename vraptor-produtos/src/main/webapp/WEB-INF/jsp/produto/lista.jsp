@@ -35,5 +35,8 @@
 	</table>
 	<a href="<c:url value='/produto/formulario'/>"> Adicionar mais
 		produtos! </a>
+	<c:if test="${not empty mensagem}">
+		<div class="alert alert-success">${mensagem}</div>
+	</c:if>
 </body>
 </html>
